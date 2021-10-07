@@ -15,6 +15,9 @@ class Node
  
 class Main{
     public static void inorder (Node root){
+        if(root==null){
+            return;
+        }
        
         inorder(root.left);
         System.out.print(root.data+ " ");
